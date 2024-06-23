@@ -23,3 +23,4 @@ else:
 
 if source_root_path:
     sys.path.insert(0, source_root_path)
+    os.environ['SRC_ROOT_DIR'] = source_root_path
