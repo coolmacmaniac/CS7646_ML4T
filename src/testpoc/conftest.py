@@ -4,4 +4,5 @@ pytest_plugins = [
     'fixtures.timeline',
     'fixtures.testnums',
     'fixtures.testfruits',
+    'fixtures.edibles',
 ]
