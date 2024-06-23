@@ -10,10 +10,16 @@ startup_mod_dir = os.path.dirname(os.path.abspath(__file__))
 # inside source root and its child folders
 source_root = 'src'
 source_root_path = None
-for root, dirs, files in os.walk(startup_mod_dir):
-    if source_root in dirs:
-        source_root_path = os.path.join(root, source_root)
-        break
+
+if source_root is None or source_root == '' or source_root == '.':
+    # intention is to use current directory as the source root
+    source_root_path = startup_mod_dir
+else:
+    # intention is to use a specified child directory as the source root
+    for root, dirs, files in os.walk(startup_mod_dir):
+        if source_root in dirs:
+            source_root_path = os.path.join(root, source_root)
+            break
 
 if source_root_path:
     sys.path.insert(0, source_root_path)
