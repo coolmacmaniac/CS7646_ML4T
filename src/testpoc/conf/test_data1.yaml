@@ -1,0 +1,30 @@
+- description: Example 1
+  inputs:
+    end_date: '2010-12-31'
+    start_date: '2010-01-01'
+    symbols:
+    - GOOG
+    - AAPL
+    - GLD
+    - XOM
+  outputs:
+    allocs:
+    - 0.0
+    - 0.4
+    - 0.6
+    - 0.0
+- description: Example 2
+  inputs:
+    end_date: '2006-01-01'
+    start_date: '2004-01-01'
+    symbols:
+    - AXP
+    - HPQ
+    - IBM
+    - HNZ
+  outputs:
+    allocs:
+    - 0.78
+    - 0.22
+    - 0.0
+    - 0.0

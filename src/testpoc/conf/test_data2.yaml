@@ -1,0 +1,39 @@
+data_root:
+- inputs:
+    allocs:
+    - 0.0
+    - 0.4
+    - 0.6
+    - 0.0
+    description: Example 1
+    end_date: '2010-12-31'
+    mode: true
+    start_date: '2010-01-01'
+    symbols:
+    - - GOOG
+      - Google
+    - - AAPL
+      - Apple
+    - - GLD
+      - Gold
+    - - XOM
+      - Exxon Mobil
+- inputs:
+    allocs:
+    - 0.78
+    - 0.22
+    - 0.0
+    - 0.0
+    description: Example 2
+    end_date: '2006-01-01'
+    mode: false
+    start_date: '2004-01-01'
+    symbols:
+    - - AXP
+      - American Express
+    - - HPQ
+      - Hewlett Packard
+    - - IBM
+      - International Business Machines
+    - - HNZ
+      - Heinz
