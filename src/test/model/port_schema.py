@@ -2,18 +2,14 @@ from typing import List
 from pydantic import BaseModel, StrictStr
 
 
-class Allocation(BaseModel):
-    description: StrictStr
-    weights: List[float]
-
-
 class Portfolio(BaseModel):
+    description: StrictStr
+    symbols: List[StrictStr]
     start_date: StrictStr
     end_date: StrictStr
-    symbols: List[StrictStr]
-    allocations: List[Allocation]
+    weights: List[float]
     initial_value: int
 
 
 class PortfolioConfig(BaseModel):
-    portfolios: List[Portfolio]
+    portfolio: Portfolio

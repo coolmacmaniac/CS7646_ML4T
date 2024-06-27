@@ -16,10 +16,11 @@ def port_test_conf(request):
         A pydantic BaseModel specialization class object loaded from the yaml file.
     """
     file_path = os.path.join(os.environ.get('SRC_ROOT_DIR'), 'test/config', request.param)
-    return read_yaml(file_path, PortfolioConfig)
+    port_conf = read_yaml(file_path, PortfolioConfig)
+    return port_conf.portfolio
 
 
 @pytest.fixture
-def portconf(port_test_conf):
+def portfolio(port_test_conf):
     """Just a simpler alias for port_test_conf."""
     yield port_test_conf

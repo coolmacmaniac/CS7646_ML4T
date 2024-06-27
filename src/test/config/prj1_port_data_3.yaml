@@ -1,0 +1,15 @@
+portfolio: 
+  description: Test Portfolio 3
+  weights:
+  - 0.25
+  - 0.25
+  - 0.25
+  - 0.25
+  end_date: '2010-12-31'
+  initial_value: 100000
+  start_date: '2010-01-01'
+  symbols:
+  - GOOG
+  - AAPL
+  - GLD
+  - XOM
